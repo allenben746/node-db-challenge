@@ -3,7 +3,7 @@ const helmet = require("helmet");
 
 //Routes Here
 const ProjectRouter = require("./projects/project-router.js");
-const ResourceRouter = require("./resources/resource-router.js");
+const ResourceRouter = require("./resources/resources-router.js");
 
 const server = express();
 

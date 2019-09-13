@@ -1,10 +1,10 @@
 const express = require("express");
 
-const Resources = require("./resource-model.js");
+const Resources = require("./resources-model.js");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/", (req, res) => { //Passed test localhost:8000/api/resources/
   Resources.get()
     .then(resources => {
       res.status(200).json(resources);
@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
     });
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", (req, res) => { //Passed test localhost:8000/api/resources/1
   const { id } = req.params;
 
   Resources.getById(id)
@@ -36,7 +36,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("/", (req, res) => {
+router.post("/", (req, res) => { //Passed test localhost:8000/api/resources/
   const resource = req.body;
 
   Resources.add(resource)

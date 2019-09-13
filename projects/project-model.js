@@ -20,18 +20,19 @@ function add(project) {
   return db("projects").insert(project);
 }
 
-function getTasks(id) {
-  return db("projects")
-    .innerJoin("tasks", "tasks.project_id", "projects.id")
-    .select(
-      "projects.project_name",
-      "projects.project_description",
-      "tasks.task_description",
-      "tasks.task_notes",
-      "tasks.completed",
-      "tasks.project_id"
-    )
-    .where({ project_id: id });
+function getTasks() {
+  return db('tasks')
+      .then(tasks => {
+          tasks.map( task => {
+              if(task.completed) {
+                  task.completed = true
+              }
+              else {
+                  task.completed = false
+              }
+          })
+          return tasks
+      })
 }
 
 function addTask(id, task) {
