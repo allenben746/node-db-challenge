@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+SQL is an abstracted form of DB programming, as in most DBs recoginze SWL code. Relational depends on a specific language.
+
 - [ ] Why do tables need a `primary key`?
+
+Primary keys are unique ids that represent a certain data and only that data.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+Foreign key. (links PKs together)
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+Sometimes data is relied upon/shared via multpile tables 
 
 ## Minimum Viable Product
 
