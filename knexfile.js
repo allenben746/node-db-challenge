@@ -13,7 +13,6 @@ module.exports = {
     seeds: {
       directory: "./data/seeds"
     },
-    
     useNullAsDefault: true,
     pool: { //Foreign Key enforcement
       afterCreate: (conn, done) => {
