@@ -16,19 +16,19 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [-] Create a forked copy of this project.
+- [-] Add your _Team Lead_ as collaborator on Github.
+- [-] Clone your forked version of the Repository.
+- [-] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [-] Implement the project on this Branch, committing changes regularly.
+- [-] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [-] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
+- [-] Please don't merge your own pull request.
+- [-] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [-] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+SQL is an abstracted form of DB programming, as in most DBs recoginze SWL code. Relational depends on a specific language.
+
 - [ ] Why do tables need a `primary key`?
+
+Primary keys are unique ids that represent a certain data and only that data.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+Foreign key. (links PKs together)
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+Sometimes data is relied upon/shared via multpile tables 
 
 ## Minimum Viable Product
 
